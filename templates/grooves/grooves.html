@@ -1,0 +1,37 @@
+  {% extends 'base.html' %}
+
+
+{% block content %}
+
+  <div class="container">
+  
+    <div class="row">
+      {% for move in list_of_grooves %}
+        <div class="col-md-3">
+            <div class="card mt-5">
+                <h2 class="card-title">{{move.groove}}
+                <div class="card-body">
+                    <h2>{{move.duration}}</h2>
+                    <h3>{{move.date}}</h3>
+                    <p class="text-muted">{{move.user.username}}
+                </div>
+
+
+            </div>
+
+        </div>
+
+        {% endfor %}
+    </div>
+
+
+
+
+  </div>
+  
+{% endblock %}
+  
+  
+ 
+    
+      

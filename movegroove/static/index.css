@@ -1,0 +1,18 @@
+html,
+body,
+.view {
+  height: 100%; }
+
+/* Navbar animation */
+.masthead {
+  height: 100vh;
+  min-height: 500px;
+  background-image: url('https://cdn-prod.medicalnewstoday.com/content/images/articles/320/320077/woman-walking-in-woods.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hero {
+    padding-top: 200px !important;
+}

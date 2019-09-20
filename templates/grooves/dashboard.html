@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+
+    <h1> Dash</h1>
+           <a href="{% url 'create_groove' %}">Create Groove</a>
+
+ 
+        <div>
+          {% for move in list_of_my_grooves %} 
+            <h1>{{move.groove}}   </h1>
+            <h2>{{move.duration}}</h2>
+            <h3>{{move.date}}</h3>
+      
+        {% endfor %}
+    
+        </div> 
+
+
+
+    </div>
+
+{% endblock %}

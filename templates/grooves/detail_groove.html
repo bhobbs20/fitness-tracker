@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+
+{% block title %} | Details {% endblock %}
+
+{% block content %}
+
+<div class="container" >
+    
+ 
+
+
+
+    <div class="row">
+  
+      <div class="col-md-4 mt-3">
+        <div class="card mb-4 shadow-sm">
+          
+          <div class="card-body">
+            <h1 class="card-text">{{ groove.groove }}</h1>
+            <h2> {{ groove.duration}} minutes</h2>
+            <h3> {{ groove.date }}
+           <h2><a  class="purple-text" href="{% url 'delete_groove' groove.id %}">Delete {{ groove.groove }}</a></h2>
+               {% comment %} <h4>{{ coop.user.username }}</h4> {% endcomment %}
+          </div>
+        </div>
+      </div>
+   
+      </div>
+</div>
+  
+{% endblock %}
